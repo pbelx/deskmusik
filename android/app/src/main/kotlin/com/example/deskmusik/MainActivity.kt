@@ -1,0 +1,6 @@
+package com.example.deskmusik
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
