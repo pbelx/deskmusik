@@ -1,16 +1,33 @@
-# deskmusik
+Online Radio Player
+A Flutter-based desktop application for streaming online radio stations. This app allows users to browse and play radio stations, control playback, adjust volume, and dynamically update the API endpoint for fetching stations. It also includes an image carousel for visual appeal.
 
-A new Flutter project.
+Features
+Stream Radio Stations: Play online radio stations fetched from a configurable API endpoint.
 
-## Getting Started
+Dynamic API Endpoint: Update the API endpoint via a settings screen.
 
-This project is a starting point for a Flutter application.
+Playback Controls: Play, pause, skip to the next station, and go back to the previous station.
 
-A few resources to get you started if this is your first Flutter project:
+Volume Control: Adjust volume using a slider or buttons.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Image Carousel: Displays a rotating carousel of images.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Persistent Settings: Save the API endpoint using shared_preferences.
+
+Responsive UI: Designed for desktop with a clean and intuitive interface.
+API Endpoint Format
+The app expects the API endpoint to return a JSON array of radio stations in the following format:
+[
+  {
+    "id": 1,
+    "created_at": "2024-11-22T21:21:41.100293+00:00",
+    "name": "xxxx",
+    "url": "http://sstream"
+  },
+  {
+    "id": 2,
+    "created_at": "2024-11-22T21:22:06.879202+00:00",
+    "name": " v fm",
+    "url": "https://stream2"
+  }
+]
